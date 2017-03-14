@@ -1,0 +1,40 @@
+body {
+    padding: 3em !important;
+    box-sizing: border-box !important;
+}
+
+/* Button overrides */
+input[type=submit] {
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: .4em;
+    font-size: 20pt;
+    margin: 3pt;
+    background-color: transparent;
+    color: white;
+    left: 30%;
+    width: 40%;
+    position: absolute;
+
+    -webkit-transition: background .2s, color .05s;
+    transition: background .2s, color .05s;
+}
+input[type=submit].disabled {
+    opacity: .4;
+}
+input[type=submit]:hover:not(.disabled) {
+    cursor: pointer;
+}
+input[type=submit]:focus {
+    border-color: #9CF;
+    outline: 2px solid;
+    outline-color: #9CF;
+}
+input[type=submit]:active {
+/*    color: grey;*/
+}
+
+input[type=submit]:hover:not(.disabled) {
+    background-color: #a51e5f;
+}
